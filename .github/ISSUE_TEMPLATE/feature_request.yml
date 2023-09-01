@@ -1,7 +1,7 @@
 name: 🚀 Feature request
 description: Suggest an idea
 labels: feature request
-title: '[Feature]'
+title: '[Feature Request]'
 
 body:
   - type: checkboxes
