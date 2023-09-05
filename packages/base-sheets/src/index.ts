@@ -18,6 +18,8 @@ export { RemoveSheetMutation, RemoveSheetUndoMutationFactory } from './Commands/
 export { InsertSheetMutation, InsertSheetUndoMutationFactory } from './Commands/Mutations/insert-sheet.mutation';
 export { InsertRowMutation, InsertColMutation, InsertRowMutationFactory, InsertColMutationFactory } from './Commands/Mutations/insert-row-col.mutation';
 export { ISetRangeStyleMutationParams, SetRangeStyleMutation } from './Commands/Mutations/set-range-styles.mutation';
+export * from './Commands/Commands/clear-selection-content.command';
+export * from './Commands/Commands/insert-row-col.command';
 
 // operations
 export { SetSelectionsOperation } from './Commands/Operations/selection.operation';
