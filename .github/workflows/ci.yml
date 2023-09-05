@@ -26,32 +26,32 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-          run_install: false
+    #   - name: Install pnpm
+    #     uses: pnpm/action-setup@v2
+    #     with:
+    #       version: 8
+    #       run_install: false
 
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+    #   - name: Get pnpm store directory
+    #     shell: bash
+    #     run: |
+    #       echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-      - name: Install dependencies
-        run: pnpm install
+    #   - name: Setup pnpm cache
+    #     uses: actions/cache@v3
+    #     with:
+    #       path: ${{ env.STORE_PATH }}
+    #       key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+    #       restore-keys: |
+    #         ${{ runner.os }}-pnpm-store-
+    #   - name: Install dependencies
+    #     run: pnpm install
 
-      - name: Build
-        run: pnpm run build
+    #   - name: Build
+    #     run: pnpm run build
 
-      - name: Build demo
-        run: pnpm run build:demo
+    #   - name: Build demo
+    #     run: pnpm run build:demo
 
     #   - name: Deploy to Vercel
     #     uses: amondnet/vercel-action@v25
@@ -84,7 +84,10 @@ jobs:
     #     with:
     #       webhook: ${{ secrets.DISCORD_WEBHOOK }}
     #       status: ${{ job.status }}
-    #       description: "CI Pipeline: Unsuccessful 📛"
+    #       description: |
+    #         CI Pipeline: Unsuccessful 📛
+    #         **[View PR]**
+    #         [click here](${{ github.event.pull_request.html_url }})
     #       nofail: false
     #       nodetail: false
     #       color: 0xd63031
