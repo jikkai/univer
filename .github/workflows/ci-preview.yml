@@ -1,8 +1,6 @@
 name: 📦 CI Preview
 
 on:
-  push:
-    branches: [main, dev]
   pull_request:
     branches: [main, dev]
 
@@ -14,10 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    env:
-      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-      TURBO_TEAM: ${{ vars.TURBO_TEAM }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -27,47 +21,22 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: 🧽 Find And Delete Comment
+        uses: peter-evans/find-comment@v2
+        id: fc
         with:
-          version: 8
-          run_install: false
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: View Deployment
 
-      - name: Get pnpm store directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
+      - name: 📝 Create or update comment
+        uses: peter-evans/create-or-update-comment@v3
         with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build demo
-        run: pnpm run build:demo
-
-    #   - name: Deploy to Vercel
-    #     uses: amondnet/vercel-action@v25
-    #     id: vercel-action
-    #     with:
-    #       vercel-token: ${{ secrets.VERCEL_TOKEN }}
-    #       vercel-org-id: ${{ secrets.ORG_ID}}
-    #       vercel-project-id: ${{ secrets.PROJECT_ID}}
-
-      - uses: actions/github-script@v6
-        with:
-          script: |
-            await github.rest.issues.createComment({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                body: `**Welcome**, new contributor!
-
-                Please make sure you're read our [contributing guide](CONTRIBUTING.md) and we look forward to reviewing your Pull request shortly ✨`
-            })
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            `**[View Deployment]**\n` +
+            `- [📝 Doc](https://foo.bar/doc/)\n` +
+            `- [📊 Sheet](https://foo.bar/sheet/)\n` +
+            `- [📽️ Slide](https://foo.bar/slide/)`
+          edit-mode: replace
