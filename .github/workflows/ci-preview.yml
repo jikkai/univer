@@ -35,8 +35,8 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            `**[View Deployment]**\n` +
-            `- [📝 Doc](https://foo.bar/doc/)\n` +
-            `- [📊 Sheet](https://foo.bar/sheet/)\n` +
-            `- [📽️ Slide](https://foo.bar/slide/)`
+            **[View Deployment]**
+            - [📝 Doc](https://foo.bar/doc/)
+            - [📊 Sheet](https://foo.bar/sheet/)
+            - [📽️ Slide](https://foo.bar/slide/)
           edit-mode: replace
