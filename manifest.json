@@ -1,0 +1,384 @@
+{
+  "repository": "dream-num/univer",
+  "beforeCommit": "91022459166251c69a45716c639333f017e821f1",
+  "afterCommit": "e77bde5ca83395180de67e2ff77390c334033344",
+  "labels": {
+    "left": "Before",
+    "right": "After"
+  },
+  "components": 30,
+  "componentAndDensityPairs": 62,
+  "productPairs": 11,
+  "images": [
+    {
+      "key": "button-light",
+      "name": "Button",
+      "theme": "Light"
+    },
+    {
+      "key": "button-dark",
+      "name": "Button",
+      "theme": "Dark"
+    },
+    {
+      "key": "input-light",
+      "name": "Input",
+      "theme": "Light"
+    },
+    {
+      "key": "input-dark",
+      "name": "Input",
+      "theme": "Dark"
+    },
+    {
+      "key": "input-number-light",
+      "name": "InputNumber",
+      "theme": "Light"
+    },
+    {
+      "key": "input-number-dark",
+      "name": "InputNumber",
+      "theme": "Dark"
+    },
+    {
+      "key": "textarea-light",
+      "name": "Textarea",
+      "theme": "Light"
+    },
+    {
+      "key": "textarea-dark",
+      "name": "Textarea",
+      "theme": "Dark"
+    },
+    {
+      "key": "form-layout-light",
+      "name": "FormLayout",
+      "theme": "Light"
+    },
+    {
+      "key": "form-layout-dark",
+      "name": "FormLayout",
+      "theme": "Dark"
+    },
+    {
+      "key": "checkbox-light",
+      "name": "Checkbox",
+      "theme": "Light"
+    },
+    {
+      "key": "checkbox-dark",
+      "name": "Checkbox",
+      "theme": "Dark"
+    },
+    {
+      "key": "radio-light",
+      "name": "Radio",
+      "theme": "Light"
+    },
+    {
+      "key": "radio-dark",
+      "name": "Radio",
+      "theme": "Dark"
+    },
+    {
+      "key": "accordion-light",
+      "name": "Accordion",
+      "theme": "Light"
+    },
+    {
+      "key": "accordion-dark",
+      "name": "Accordion",
+      "theme": "Dark"
+    },
+    {
+      "key": "avatar-light",
+      "name": "Avatar",
+      "theme": "Light"
+    },
+    {
+      "key": "avatar-dark",
+      "name": "Avatar",
+      "theme": "Dark"
+    },
+    {
+      "key": "badge-light",
+      "name": "Badge",
+      "theme": "Light"
+    },
+    {
+      "key": "badge-dark",
+      "name": "Badge",
+      "theme": "Dark"
+    },
+    {
+      "key": "select-light",
+      "name": "Select",
+      "theme": "Light"
+    },
+    {
+      "key": "select-dark",
+      "name": "Select",
+      "theme": "Dark"
+    },
+    {
+      "key": "multiple-select-light",
+      "name": "MultipleSelect",
+      "theme": "Light"
+    },
+    {
+      "key": "multiple-select-dark",
+      "name": "MultipleSelect",
+      "theme": "Dark"
+    },
+    {
+      "key": "mobile-select-light",
+      "name": "MobileSelect",
+      "theme": "Light"
+    },
+    {
+      "key": "mobile-select-dark",
+      "name": "MobileSelect",
+      "theme": "Dark"
+    },
+    {
+      "key": "segmented-light",
+      "name": "Segmented",
+      "theme": "Light"
+    },
+    {
+      "key": "segmented-dark",
+      "name": "Segmented",
+      "theme": "Dark"
+    },
+    {
+      "key": "command-light",
+      "name": "Command",
+      "theme": "Light"
+    },
+    {
+      "key": "command-dark",
+      "name": "Command",
+      "theme": "Dark"
+    },
+    {
+      "key": "gradient-light",
+      "name": "GradientColorPicker",
+      "theme": "Light"
+    },
+    {
+      "key": "gradient-dark",
+      "name": "GradientColorPicker",
+      "theme": "Dark"
+    },
+    {
+      "key": "mobile-gradient-light",
+      "name": "MobileGradientColorPicker",
+      "theme": "Light"
+    },
+    {
+      "key": "mobile-gradient-dark",
+      "name": "MobileGradientColorPicker",
+      "theme": "Dark"
+    },
+    {
+      "key": "mobile-action-row-light",
+      "name": "MobileActionRow",
+      "theme": "Light"
+    },
+    {
+      "key": "mobile-action-row-dark",
+      "name": "MobileActionRow",
+      "theme": "Dark"
+    },
+    {
+      "key": "mobile-menu-light",
+      "name": "MobileDropdownMenu",
+      "theme": "Light"
+    },
+    {
+      "key": "mobile-menu-dark",
+      "name": "MobileDropdownMenu",
+      "theme": "Dark"
+    },
+    {
+      "key": "menu-light",
+      "name": "DropdownMenu",
+      "theme": "Light"
+    },
+    {
+      "key": "menu-dark",
+      "name": "DropdownMenu",
+      "theme": "Dark"
+    },
+    {
+      "key": "time-input-light",
+      "name": "TimeInput",
+      "theme": "Light"
+    },
+    {
+      "key": "time-input-dark",
+      "name": "TimeInput",
+      "theme": "Dark"
+    },
+    {
+      "key": "date-picker-light",
+      "name": "DatePicker",
+      "theme": "Light"
+    },
+    {
+      "key": "date-picker-dark",
+      "name": "DatePicker",
+      "theme": "Dark"
+    },
+    {
+      "key": "date-range-picker-light",
+      "name": "DateRangePicker",
+      "theme": "Light"
+    },
+    {
+      "key": "date-range-picker-dark",
+      "name": "DateRangePicker",
+      "theme": "Dark"
+    },
+    {
+      "key": "color-input-light",
+      "name": "ColorInput",
+      "theme": "Light"
+    },
+    {
+      "key": "color-input-dark",
+      "name": "ColorInput",
+      "theme": "Dark"
+    },
+    {
+      "key": "calendar-light",
+      "name": "Calendar",
+      "theme": "Light"
+    },
+    {
+      "key": "calendar-dark",
+      "name": "Calendar",
+      "theme": "Dark"
+    },
+    {
+      "key": "dialog-light",
+      "name": "DialogDescription",
+      "theme": "Light"
+    },
+    {
+      "key": "dialog-dark",
+      "name": "DialogDescription",
+      "theme": "Dark"
+    },
+    {
+      "key": "dropdown-light",
+      "name": "Dropdown / Popover",
+      "theme": "Light"
+    },
+    {
+      "key": "dropdown-dark",
+      "name": "Dropdown / Popover",
+      "theme": "Dark"
+    },
+    {
+      "key": "hover-card-light",
+      "name": "HoverCard",
+      "theme": "Light"
+    },
+    {
+      "key": "hover-card-dark",
+      "name": "HoverCard",
+      "theme": "Dark"
+    },
+    {
+      "key": "toaster-light",
+      "name": "Toaster",
+      "theme": "Light"
+    },
+    {
+      "key": "toaster-dark",
+      "name": "Toaster",
+      "theme": "Dark"
+    },
+    {
+      "key": "message-light",
+      "name": "Message / Messager",
+      "theme": "Light"
+    },
+    {
+      "key": "message-dark",
+      "name": "Message / Messager",
+      "theme": "Dark"
+    },
+    {
+      "key": "density-light",
+      "name": "ConfigProvider density",
+      "theme": "Light"
+    },
+    {
+      "key": "density-dark",
+      "name": "ConfigProvider density",
+      "theme": "Dark"
+    },
+    {
+      "key": "sheets-panel",
+      "name": "Sheets",
+      "theme": "Desktop · Light"
+    },
+    {
+      "key": "sheets-mobile-panel",
+      "name": "Sheets",
+      "theme": "Mobile · Dark"
+    },
+    {
+      "key": "docs-panel",
+      "name": "Docs",
+      "theme": "Desktop · Light"
+    },
+    {
+      "key": "docs-mobile-panel",
+      "name": "Docs",
+      "theme": "Mobile · Dark"
+    },
+    {
+      "key": "slides-panel",
+      "name": "Slides",
+      "theme": "Desktop · Light"
+    },
+    {
+      "key": "slides-mobile-panel",
+      "name": "Slides",
+      "theme": "Mobile · Dark"
+    },
+    {
+      "key": "bases-panel",
+      "name": "Bases",
+      "theme": "Desktop · Light"
+    },
+    {
+      "key": "bases-mobile-panel",
+      "name": "Bases",
+      "theme": "Mobile · Dark"
+    },
+    {
+      "key": "boards-panel",
+      "name": "Boards",
+      "theme": "Desktop · Light"
+    },
+    {
+      "key": "boards-mobile-panel",
+      "name": "Boards",
+      "theme": "Mobile · Dark"
+    },
+    {
+      "key": "pdfs-panel",
+      "name": "PDF",
+      "theme": "Desktop · Light"
+    }
+  ],
+  "notes": [
+    "Composited from original browser screenshots without changing component pixels.",
+    "Product screenshots use Univer Pro 06d81c3a4 with the matching Core baseline and the patched Core sources.",
+    "Pro license watermarks are preserved."
+  ]
+}
